@@ -28,7 +28,7 @@ BookMyCare is a nurse booking and profile management platform that allows hospit
   - Clients can request nurse services.  
   - Nurses can view and accept/reject bookings.  
 - **Booking History**: View all completed bookings with key details.  
-- **Document Handling**: Files stored in `wwwroot/uploads/nurse`. Old files automatically removed upon updates.  
+- **Document Handling**: Files stored in `wwwroot/uploads/`. Old files automatically removed upon updates.  
 - **Support System**:  
   - Contact form for queries.  
   - Email and phone support.  
