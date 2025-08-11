@@ -14,7 +14,7 @@ BookMyCare is a nurse booking and profile management platform that allows hospit
   - Registers and uploads profile details/documents.  
   - Manages availability, accepts bookings, and tracks booking history.  
 
-- **Client (Patient / Organization)**:  
+- **Client (Patient)**:  
   - Searches and books available nurses for required services.  
   - Views booking history and communicates via support.  
 
@@ -61,25 +61,25 @@ BookMyCare is a nurse booking and profile management platform that allows hospit
 
 ### 3. BookingDetails
 - BookingID (Primary Key, Auto-Increment)  
-- NurseID (Foreign Key from NurseDetails)  
+- NurseID (Foreign Key from NurseDetails)
+- UserId (Foreign Key from UserDetails)
 - ClientName  
 - ClientContact  
 - ServiceType  
 - BookingDate  
 - Status (Pending/Approved/Completed/Cancelled)  
 - ApprovedBy  
-- ResponseDate  
 
 ### 4. SupportMessages
 - MessageID (Primary Key)  
 - UserEmail  
 - Subject  
 - MessageBody  
-- SubmittedDate  
+- SubmittedDate
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, Bootstrap 5, JavaScript, Font Awesome, SweetAlert2  
-- **Backend**: ASP.NET Core MVC (.NET 6+)  
+- **Backend**: ASP.NET Core MVC (.NET 8)  
 - **Database**: Microsoft SQL Server  
 - **Data Access**: ADO.NET (SqlConnection, SqlDataReader, SqlCommand)  
 
