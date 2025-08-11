@@ -1,57 +1,48 @@
-# 🏥 BookMyCare
+# BookMyCare
 
 ## Project Overview
-**BookMyCare** is a **nurse booking and profile management platform** that allows hospitals, clinics, and individuals to easily book professional nurses for healthcare services.  
-Nurses can register, update their profiles, manage bookings, upload documents, and communicate with support. The system includes an **admin approval mechanism** for nurse profiles to ensure authenticity and quality of service.
-
----
+BookMyCare is a nurse booking and profile management platform that allows hospitals, clinics, and individuals to easily book professional nurses for healthcare services. Nurses can register, update their profiles, manage bookings, upload documents, and communicate with support. The system includes an admin approval mechanism for nurse profiles to ensure authenticity and quality of service.
 
 ## Features
 
-### 1. **User Roles**
+### 1. User Roles
 - **Admin**:  
   - Approves nurse registrations and profile updates.  
-  - Manages bookings, user accounts, and platform settings.
+  - Manages bookings, user accounts, and platform settings.  
+
 - **Nurse**:  
   - Registers and uploads profile details/documents.  
-  - Manages availability, accepts bookings, and tracks booking history.
-- **Client** (Patient / Organization):  
+  - Manages availability, accepts bookings, and tracks booking history.  
+
+- **Client (Patient / Organization)**:  
   - Searches and books available nurses for required services.  
-  - Views booking history and communicates via support.
+  - Views booking history and communicates via support.  
 
----
-
-### 2. **Core Functionalities**
-- **Secure Authentication**: Login and registration for all user roles with session management.
+### 2. Core Functionalities
+- **Secure Authentication**: Login and registration for all user roles with session management.  
 - **Nurse Profile Management**:  
   - Upload profile picture and documents (ID, License, Certificates).  
   - Edit personal and professional details.  
-  - **Admin approval required** after profile updates.
+  - Admin approval required after profile updates.  
 - **Booking System**:  
   - Clients can request nurse services.  
-  - Nurses can view and accept/reject bookings.
-- **Booking History**:  
-  - View all completed bookings with key details.
-- **Document Handling**:  
-  - Files stored in `wwwroot/uploads/nurse`.  
-  - Old files automatically removed upon updates.
+  - Nurses can view and accept/reject bookings.  
+- **Booking History**: View all completed bookings with key details.  
+- **Document Handling**: Files stored in `wwwroot/uploads/nurse`. Old files automatically removed upon updates.  
 - **Support System**:  
   - Contact form for queries.  
   - Email and phone support.  
-  - FAQ section for quick help.
-- **Responsive UI**:  
-  - Mobile-friendly design with Bootstrap 5 and icons.
-
----
+  - FAQ section for quick help.  
+- **Responsive UI**: Mobile-friendly design with Bootstrap 5 and icons.
 
 ## Database Schema
 
-### 1. **AdminDetails**
+### 1. AdminDetails
 - Email (Primary Key)  
 - Password  
 - Name  
 
-### 2. **NurseDetails**
+### 2. NurseDetails
 - NurseID (Primary Key)  
 - Name  
 - Email (Unique)  
@@ -68,7 +59,7 @@ Nurses can register, update their profiles, manage bookings, upload documents, a
 - ApprovedBy  
 - ApprovedDate  
 
-### 3. **BookingDetails**
+### 3. BookingDetails
 - BookingID (Primary Key, Auto-Increment)  
 - NurseID (Foreign Key from NurseDetails)  
 - ClientName  
@@ -79,14 +70,12 @@ Nurses can register, update their profiles, manage bookings, upload documents, a
 - ApprovedBy  
 - ResponseDate  
 
-### 4. **SupportMessages**
+### 4. SupportMessages
 - MessageID (Primary Key)  
 - UserEmail  
 - Subject  
 - MessageBody  
 - SubmittedDate  
-
----
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, Bootstrap 5, JavaScript, Font Awesome, SweetAlert2  
@@ -94,28 +83,9 @@ Nurses can register, update their profiles, manage bookings, upload documents, a
 - **Database**: Microsoft SQL Server  
 - **Data Access**: ADO.NET (SqlConnection, SqlDataReader, SqlCommand)  
 
----
-
 ## Installation & Setup
 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-repo/BookMyCare.git
 cd BookMyCare
-
----
-## **Future Enhancements**
-- Live chat between clients and nurses.  
-- Integrated payment system for bookings.  
-- Google Maps API integration for location-based nurse search.  
-- Push notifications for booking updates.  
-
-## **Contributing**
-1. Fork the repository.  
-2. Create a new branch.  
-3. Submit a pull request.  
-
-## **License**
-This project is licensed under the **MIT License** – free to use and modify.  
-
-
