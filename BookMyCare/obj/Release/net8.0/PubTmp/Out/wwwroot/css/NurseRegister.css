@@ -1,0 +1,32 @@
+﻿body {
+    background: linear-gradient(135deg, #d1f0ff, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    max-width: 650px;
+    margin: auto;
+    border: none;
+    border-radius: 1rem;
+}
+
+h2, h4 {
+    color: #146C94;
+}
+
+
+.step {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

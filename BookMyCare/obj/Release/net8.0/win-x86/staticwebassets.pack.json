@@ -1,0 +1,801 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\Photos\\defaultProfilePic.jpg",
+      "PackagePath": "staticwebassets\\Photos\\defaultProfilePic.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\Photos\\defaultProfilePic.webp",
+      "PackagePath": "staticwebassets\\Photos\\defaultProfilePic.webp"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\Photos\\nurse.png",
+      "PackagePath": "staticwebassets\\Photos\\nurse.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\BookingHistory.css",
+      "PackagePath": "staticwebassets\\css\\BookingHistory.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\NurseHome.css",
+      "PackagePath": "staticwebassets\\css\\NurseHome.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\NurseRegister.css",
+      "PackagePath": "staticwebassets\\css\\NurseRegister.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\PageLoader.css",
+      "PackagePath": "staticwebassets\\css\\PageLoader.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\UpdateProfile.css",
+      "PackagePath": "staticwebassets\\css\\UpdateProfile.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\UserHome.css",
+      "PackagePath": "staticwebassets\\css\\UserHome.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\js\\NurseRegister.js",
+      "PackagePath": "staticwebassets\\js\\NurseRegister.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\js\\PageLoader.js",
+      "PackagePath": "staticwebassets\\js\\PageLoader.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\074d7887-07a3-4c7e-a4d0-0a5daac05128.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\074d7887-07a3-4c7e-a4d0-0a5daac05128.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\108aefaf-f905-469f-b118-c387640d2bc2.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\108aefaf-f905-469f-b118-c387640d2bc2.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\1192f16a-e401-4d59-9e07-69fb7780f4ef.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\1192f16a-e401-4d59-9e07-69fb7780f4ef.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\1434e35d-beb0-434a-abec-b07c51f2f11d.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\1434e35d-beb0-434a-abec-b07c51f2f11d.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\17e3333d-baaa-49b2-8495-189750e8bbd8.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\17e3333d-baaa-49b2-8495-189750e8bbd8.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\2de70bda-afb6-4a28-b313-cf4f7e50f828.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\2de70bda-afb6-4a28-b313-cf4f7e50f828.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\35c42757-ae84-4b57-9828-3dbfc89538bb.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\35c42757-ae84-4b57-9828-3dbfc89538bb.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\3a680bff-2ce0-4969-a5c2-f59b2af58931.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\3a680bff-2ce0-4969-a5c2-f59b2af58931.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\3b995dfa-f63c-46d3-bcc5-6cd0c6f6d484.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\3b995dfa-f63c-46d3-bcc5-6cd0c6f6d484.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\3dc44d74-6d38-4ea6-8973-7ea63570cfaa.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\3dc44d74-6d38-4ea6-8973-7ea63570cfaa.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\403446c7-5ab0-41a0-8477-0e9b5c592237.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\403446c7-5ab0-41a0-8477-0e9b5c592237.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\4dc05879-5e44-4d16-8d28-db674917f28c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\4dc05879-5e44-4d16-8d28-db674917f28c.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\4f67f5b0-51b2-4579-9a53-783da182b5b4.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\4f67f5b0-51b2-4579-9a53-783da182b5b4.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\5dc5f5cd-2246-43fb-ab4f-f2189cd6efb0.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\5dc5f5cd-2246-43fb-ab4f-f2189cd6efb0.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\5ffc3ee0-21e0-4073-a39e-52b8030431c4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\5ffc3ee0-21e0-4073-a39e-52b8030431c4.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\6bf91dbe-ffbf-4cf5-8e3e-3799569fc72a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\6bf91dbe-ffbf-4cf5-8e3e-3799569fc72a.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\88536502-a9bd-4e62-b93a-4905e86536b8.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\88536502-a9bd-4e62-b93a-4905e86536b8.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\898dfdbd-a0cb-4aff-8fcc-0981ec90dbe9.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\898dfdbd-a0cb-4aff-8fcc-0981ec90dbe9.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\8cfbf634-5839-4803-bd63-adc8d3cfb882.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\8cfbf634-5839-4803-bd63-adc8d3cfb882.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\9a42074e-5c1c-4ba6-90aa-de4579ee5d6e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\9a42074e-5c1c-4ba6-90aa-de4579ee5d6e.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\9c57225e-bf4f-4abe-b9de-148a77c34528.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\9c57225e-bf4f-4abe-b9de-148a77c34528.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\9df59497-4a04-40d1-896b-2c9bd0ec0916.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\9df59497-4a04-40d1-896b-2c9bd0ec0916.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\abda2c13-e58c-41ff-be61-e080865ae127.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\abda2c13-e58c-41ff-be61-e080865ae127.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\b04682ea-5292-4bbc-97ca-fd5c9e88e130.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\b04682ea-5292-4bbc-97ca-fd5c9e88e130.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\cf58038e-faac-42e3-b899-0762c356260e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\cf58038e-faac-42e3-b899-0762c356260e.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\d3d370a5-8d32-4f93-92e6-b322694c34e7.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\d3d370a5-8d32-4f93-92e6-b322694c34e7.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\dbe1f2e6-d97b-48b1-8560-344c6439977a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\dbe1f2e6-d97b-48b1-8560-344c6439977a.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\e20f07bf-4398-447b-9a7c-44dc38f81eb5.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\e20f07bf-4398-447b-9a7c-44dc38f81eb5.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\e39870d4-0e29-421b-959c-c5b8c94130ad.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\e39870d4-0e29-421b-959c-c5b8c94130ad.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\e49dab1a-4d9c-425a-a3c1-711a2ea5e50d.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\e49dab1a-4d9c-425a-a3c1-711a2ea5e50d.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\e74aef82-c04d-4499-9fcf-16a92ee2c172.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\e74aef82-c04d-4499-9fcf-16a92ee2c172.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\e74c4daa-b6c0-4259-9388-22f099b8cf52.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\e74c4daa-b6c0-4259-9388-22f099b8cf52.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\f2d583fc-e409-487f-ae75-b9b399c38ea3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\f2d583fc-e409-487f-ae75-b9b399c38ea3.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\f5b34380-c469-479f-b9c3-337b124cba92.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\f5b34380-c469-479f-b9c3-337b124cba92.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\f6a4eb88-0161-49fc-9b2b-549a4591ad82.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\f6a4eb88-0161-49fc-9b2b-549a4591ad82.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\f7147b1f-dc4c-4c8f-be04-072d351655d5.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\f7147b1f-dc4c-4c8f-be04-072d351655d5.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\bookings\\fce9e3f9-34de-4c29-bce1-246d69dc58b7.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bookings\\fce9e3f9-34de-4c29-bce1-246d69dc58b7.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\01890801-e00d-4701-a777-b5745f9b654a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\01890801-e00d-4701-a777-b5745f9b654a.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\02a3cd04-f264-4d8b-803a-cd4c5310b39f.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\02a3cd04-f264-4d8b-803a-cd4c5310b39f.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\07e5313e-18b8-4578-bd12-b260ed601a8e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\07e5313e-18b8-4578-bd12-b260ed601a8e.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\07f04135-a51f-4c58-b49a-d1293d3b6940.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\07f04135-a51f-4c58-b49a-d1293d3b6940.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\106f1e17-a95a-4376-9a93-af9398b67210.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\106f1e17-a95a-4376-9a93-af9398b67210.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\10a455a2-7e64-4d99-9ee7-29f3433c2dfd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\10a455a2-7e64-4d99-9ee7-29f3433c2dfd.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\1827d858-d4a1-4626-a3b2-03deffb7c99d.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\1827d858-d4a1-4626-a3b2-03deffb7c99d.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\1849c888-fe2c-42ee-91bc-a4a5d64f2ad6.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\1849c888-fe2c-42ee-91bc-a4a5d64f2ad6.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\18b6196e-6ad9-49d6-9c54-42bbf35aef6c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\18b6196e-6ad9-49d6-9c54-42bbf35aef6c.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\1b587446-1e50-4a46-96b7-952400cf03f3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\1b587446-1e50-4a46-96b7-952400cf03f3.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\1d994e48-dc8b-4311-b6b7-5dead916c366.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\1d994e48-dc8b-4311-b6b7-5dead916c366.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\1f2ef630-56ae-427c-92c2-c04230a36d3b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\1f2ef630-56ae-427c-92c2-c04230a36d3b.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\23d76c47-a702-42c8-98b2-95a5a12df105.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\23d76c47-a702-42c8-98b2-95a5a12df105.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\23e0de2f-8231-483f-9fe4-32b7f2211a84.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\23e0de2f-8231-483f-9fe4-32b7f2211a84.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\2802319e-1d7b-408a-b0c3-ad27565b26b5.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\2802319e-1d7b-408a-b0c3-ad27565b26b5.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\2cb4cf50-f89a-4b4c-b149-62378ff24c87.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\2cb4cf50-f89a-4b4c-b149-62378ff24c87.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\340e30e8-a800-41fb-8813-82affebeeedc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\340e30e8-a800-41fb-8813-82affebeeedc.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\367a3762-075c-4fdc-ae08-888b63cb0d41.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\367a3762-075c-4fdc-ae08-888b63cb0d41.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\3f39622d-b9c7-4885-ac37-2eb0391d7bda.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\3f39622d-b9c7-4885-ac37-2eb0391d7bda.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\3fb8c19d-78a8-4b1b-b9ab-f989f5d72045.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\3fb8c19d-78a8-4b1b-b9ab-f989f5d72045.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\410e4e5e-4027-4d65-95e7-2bf8fd43cfb0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\410e4e5e-4027-4d65-95e7-2bf8fd43cfb0.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\459bd34e-e42d-49c3-ad97-27d497eb9a1a.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\459bd34e-e42d-49c3-ad97-27d497eb9a1a.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\468f5c03-fa71-4786-b5db-f73a2b6528a8.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\468f5c03-fa71-4786-b5db-f73a2b6528a8.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\4a0eb93b-500d-4184-99ac-ed13975cb161.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\4a0eb93b-500d-4184-99ac-ed13975cb161.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\4c2f02d8-43b5-424b-b6c2-f78067153024.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\4c2f02d8-43b5-424b-b6c2-f78067153024.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\4dde7819-6be8-4aa8-be00-c665aac3f166.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\4dde7819-6be8-4aa8-be00-c665aac3f166.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\4eaa4e5e-56f2-4c0a-b7cd-897060b4a944.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\4eaa4e5e-56f2-4c0a-b7cd-897060b4a944.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\514786ac-aeae-4b53-94e8-91da55d8e978.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\514786ac-aeae-4b53-94e8-91da55d8e978.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\53114c9b-1b6c-4d09-9613-2ad163824498.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\53114c9b-1b6c-4d09-9613-2ad163824498.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\53fc8a97-68e0-4fec-a45e-ae4aec76f469.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\53fc8a97-68e0-4fec-a45e-ae4aec76f469.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\54e2ea08-db61-4a21-a11b-bbdbd15ee4cb.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\54e2ea08-db61-4a21-a11b-bbdbd15ee4cb.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\58e4c3f4-19fa-4960-827e-bd01f03b75e3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\58e4c3f4-19fa-4960-827e-bd01f03b75e3.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\5d3ff7f7-1ec4-4464-ae5b-c29aed819cb9.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\5d3ff7f7-1ec4-4464-ae5b-c29aed819cb9.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\5f5d90e4-cd0c-4972-93cc-8137b7b250e1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\5f5d90e4-cd0c-4972-93cc-8137b7b250e1.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\5fd053b1-dc36-43d6-bb8d-905ddbc57aeb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\5fd053b1-dc36-43d6-bb8d-905ddbc57aeb.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\6732cd04-a495-40b6-b724-a9fcf35e365f.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\6732cd04-a495-40b6-b724-a9fcf35e365f.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\6888c996-cc34-4654-a2e1-c0fc11e6b883.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\6888c996-cc34-4654-a2e1-c0fc11e6b883.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\68d53b25-783d-47d8-80cb-92fe5ea31b8f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\68d53b25-783d-47d8-80cb-92fe5ea31b8f.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\692eb825-8a48-4aa6-a5f7-3af16bbecb7b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\692eb825-8a48-4aa6-a5f7-3af16bbecb7b.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\6b29c270-a09e-4627-9de6-eb65e6deb64c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\6b29c270-a09e-4627-9de6-eb65e6deb64c.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\6c9360f1-e029-413e-b1cb-de43446e5caf.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\6c9360f1-e029-413e-b1cb-de43446e5caf.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\6caa0e31-0509-44df-978b-b54bb422fd3f.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\6caa0e31-0509-44df-978b-b54bb422fd3f.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\7130839f-003f-44d1-9c5f-81b85fbf33c1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\7130839f-003f-44d1-9c5f-81b85fbf33c1.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\75364329-25e9-4bc5-b2d2-c6e9d575ff64.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\75364329-25e9-4bc5-b2d2-c6e9d575ff64.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\79cc0034-78e7-473b-9b26-606919e2a71f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\79cc0034-78e7-473b-9b26-606919e2a71f.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\863db05f-79b1-43ca-a415-7f159b583c32.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\863db05f-79b1-43ca-a415-7f159b583c32.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\86ad819f-3a4a-4736-b2a4-9eade4f2a18f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\86ad819f-3a4a-4736-b2a4-9eade4f2a18f.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\89d169bd-3c4d-4f92-95e2-350dc8b956cb.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\89d169bd-3c4d-4f92-95e2-350dc8b956cb.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\8a6c0fe4-a80c-4609-86e7-79e03a8014c9.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\8a6c0fe4-a80c-4609-86e7-79e03a8014c9.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\8ffc5f91-edb0-47cc-8f5a-99d2e3fb2233.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\8ffc5f91-edb0-47cc-8f5a-99d2e3fb2233.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\904e1a21-b8b0-4a6f-a0cd-95462e6f72e6.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\904e1a21-b8b0-4a6f-a0cd-95462e6f72e6.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\943c182b-358a-420c-ab9c-da95fe9309a5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\943c182b-358a-420c-ab9c-da95fe9309a5.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\98676715-6f2d-4610-bf5a-f424830d7414.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\98676715-6f2d-4610-bf5a-f424830d7414.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\99af085c-f963-469e-a3f4-8375747b8266.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\99af085c-f963-469e-a3f4-8375747b8266.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\9a0c34a4-42a7-450e-bcc6-04c193b45ed9.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\9a0c34a4-42a7-450e-bcc6-04c193b45ed9.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\9cba9364-80a1-4937-bb79-137ff8b459c5.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\9cba9364-80a1-4937-bb79-137ff8b459c5.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\9ffdc362-a0f0-4f27-8a6d-97a0c943e38d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\9ffdc362-a0f0-4f27-8a6d-97a0c943e38d.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ab95ed56-fed0-4ec4-9745-dd7c8fc1c2c7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ab95ed56-fed0-4ec4-9745-dd7c8fc1c2c7.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ad1b9918-cbf8-42f3-bffa-b06a3f31a58f.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ad1b9918-cbf8-42f3-bffa-b06a3f31a58f.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ae112824-40c0-45c7-a606-abf03e39f7e1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ae112824-40c0-45c7-a606-abf03e39f7e1.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\aef81365-9132-4b56-bca7-05eb75f1f77b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\aef81365-9132-4b56-bca7-05eb75f1f77b.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\b0a73231-b941-4731-acc1-d6f9ab76d3de.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\b0a73231-b941-4731-acc1-d6f9ab76d3de.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\b270d802-9493-4b69-b6bc-2aeb1c47181e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\b270d802-9493-4b69-b6bc-2aeb1c47181e.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ba1b49a9-ef8b-4691-8151-831e4c1510b0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ba1b49a9-ef8b-4691-8151-831e4c1510b0.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\badf2d45-bf4f-4b94-a7da-b2aa7a516c96.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\badf2d45-bf4f-4b94-a7da-b2aa7a516c96.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\bc051c1e-cf85-464f-a9c8-57675f260447.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\bc051c1e-cf85-464f-a9c8-57675f260447.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\bce26b39-2e17-477e-ac51-80cea011bfb2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\bce26b39-2e17-477e-ac51-80cea011bfb2.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\bebb336c-0fe6-43ce-a7c4-7aa70555ab8f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\bebb336c-0fe6-43ce-a7c4-7aa70555ab8f.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\c88236d7-ccbe-4ace-bc02-a3f0f8784314.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\c88236d7-ccbe-4ace-bc02-a3f0f8784314.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\cbbaad0f-b8b4-4b42-b709-9591bffe1d2a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\cbbaad0f-b8b4-4b42-b709-9591bffe1d2a.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\cd2c81aa-b7c1-4577-90ec-32457464a06c.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\cd2c81aa-b7c1-4577-90ec-32457464a06c.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\d074fb72-6b1c-4eb5-95e9-136627dcce07.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\d074fb72-6b1c-4eb5-95e9-136627dcce07.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\d6c5c94c-4682-4b93-9855-e09893ac2d68.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\d6c5c94c-4682-4b93-9855-e09893ac2d68.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\e0154801-a84c-4bdf-ba15-40029ccf10af.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\e0154801-a84c-4bdf-ba15-40029ccf10af.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\e6beaeed-725b-4204-b33b-1a1dbe28fe5b.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\e6beaeed-725b-4204-b33b-1a1dbe28fe5b.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ec791c8f-05f1-4ac8-aa09-25a05b04f119.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ec791c8f-05f1-4ac8-aa09-25a05b04f119.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\eccf14b6-3d65-4b7b-ac88-562ef3a27acc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\eccf14b6-3d65-4b7b-ac88-562ef3a27acc.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\edf24785-2f33-4790-a6aa-aa89f25d6491.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\edf24785-2f33-4790-a6aa-aa89f25d6491.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\ef85ec04-e4f3-4287-9eb7-2b88ec12450d.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\ef85ec04-e4f3-4287-9eb7-2b88ec12450d.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\f59020ea-eabf-4c07-b9b7-81a8d8a4abac.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\f59020ea-eabf-4c07-b9b7-81a8d8a4abac.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\f729b495-a445-4654-8155-9b5a8fc3fd93.jpg",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\f729b495-a445-4654-8155-9b5a8fc3fd93.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\f893c6ab-246f-4bc1-b99e-2f475cb3aec4.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\f893c6ab-246f-4bc1-b99e-2f475cb3aec4.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\fb152773-e954-458c-bdad-d5626aad33b1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\fb152773-e954-458c-bdad-d5626aad33b1.pdf"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\nurse\\fec56ecf-f61c-405d-af61-7b1297434175.png",
+      "PackagePath": "staticwebassets\\uploads\\nurse\\fec56ecf-f61c-405d-af61-7b1297434175.png"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\user\\2eb854d3-7923-4ee0-a42c-fc71f29e5666.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user\\2eb854d3-7923-4ee0-a42c-fc71f29e5666.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\user\\691ee5a5-6e81-4760-a710-5a1bb1bbd0fc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user\\691ee5a5-6e81-4760-a710-5a1bb1bbd0fc.jpg"
+    },
+    {
+      "Id": "D:\\My Codes\\DOT NET Core MVC\\BookMyCare\\BookMyCare\\BookMyCare\\wwwroot\\uploads\\user\\dbba8ab5-05e8-4a7f-8b82-fec4d2d8ba87.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user\\dbba8ab5-05e8-4a7f-8b82-fec4d2d8ba87.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.BookMyCare.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.BookMyCare.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.build.BookMyCare.props",
+      "PackagePath": "build\\BookMyCare.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.BookMyCare.props",
+      "PackagePath": "buildMultiTargeting\\BookMyCare.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.BookMyCare.props",
+      "PackagePath": "buildTransitive\\BookMyCare.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

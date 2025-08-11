@@ -1,0 +1,168 @@
+﻿@{
+    TempData["Title"] = "Support";
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    .support-wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    }
+
+    .section-box {
+    padding: 30px;
+    }
+
+    .section-contact {
+    background-color: #e9f0ff;
+    }
+
+    .section-ticket {
+    background-color: #fff8e1;
+    }
+
+    .section-faq {
+    background-color: #f1f8f6;
+    }
+
+    .contact-box {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #fff;
+    }
+
+    .contact-box:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    }
+
+    .contact-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #0d6efd;
+    }
+
+    .faq-item {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    }
+
+    .faq-item h6 {
+    font-weight: 600;
+    color: #333;
+    }
+
+    .section-header {
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #0d6efd;
+    }
+</style>
+
+<div class="support-wrapper">
+
+    <!-- 🔹 Section: Contact Methods -->
+    <div class="section-box section-contact">
+        <h4 class="section-header"><i class="fas fa-headset me-2"></i>Contact Us</h4>
+        <div class="row g-4">
+          
+            <div class="col-md-4">
+                <a href="mailto:subratabera467@gmail.com" class="text-decoration-none text-black">
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <h6>Email</h6>
+                    <p>subratabera467@gmail.com</p>
+                </div>
+                </a>
+            </div>
+         
+            <div class="col-md-4">
+                <a href="tel:@ViewBag.PhoneNumber" class="text-decoration-none text-black">
+                <div class="contact-box">
+                    <i class="fas fa-phone"></i>
+                    <h6>Phone</h6>
+                    <p>+91 9609073653</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://wa.me/@ViewBag.PhoneNumber" class="text-decoration-none text-black">
+                <div class="contact-box">
+                    <i class="fab fa-whatsapp"></i>
+                    <h6>WhatsApp</h6>
+                    <p>Message Us</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 📝 Section: Support Ticket Form -->
+    <div class="section-box section-ticket">
+        <h4 class="section-header"><i class="fas fa-paper-plane me-2"></i>Submit a Support Ticket</h4>
+        <form asp-action="submitTicket" method="post">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="name" class="form-control" value="@Model.name" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" value="@Model.email" />
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Your Issue / Query</label>
+                    <textarea class="form-control" name="message" rows="4" placeholder="Describe your issue in detail..." required></textarea>
+                </div>
+                <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary px-4 mt-2">
+                        <i class="fas fa-paper-plane me-1"></i>Submit Ticket
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ❓ Section: FAQs -->
+    <div class="section-box section-faq">
+        <h4 class="section-header"><i class="fas fa-question-circle me-2"></i>Frequently Asked Questions</h4>
+
+        <div class="faq-item">
+            <h6>📌 How long does it take for admin approval?</h6>
+            <p>Usually within 24–48 hours. You'll receive an email once you're approved.</p>
+        </div>
+        <div class="faq-item">
+            <h6>🔒 I forgot my password. What should I do?</h6>
+            <p>Click on “Forgot Password” on the login page and follow the instructions.</p>
+        </div>
+        <div class="faq-item">
+            <h6>📅 How do I change my availability?</h6>
+            <p>Go to the dashboard → Availability section → Update your preferred time slots.</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@if(TempData["success"] != null)
+{
+    <script>
+                Swal.fire({
+            icon: 'success',
+            title: 'Support Ticket Submitted!',
+            text: '@TempData["success"]',
+            confirmButtonText: 'OK'
+        });
+
+    </script>
+}

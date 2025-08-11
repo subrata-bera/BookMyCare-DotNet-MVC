@@ -1,0 +1,280 @@
+﻿        @* Views/Shared/_Layout.cshtml *@
+@{
+    var userId = Context.Session.GetString("user_id");
+    var userName = Context.Session.GetString("user_name");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <link href="~/css/PageLoader.css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
+
+    <style>
+        .profile-img{
+            width:30px;
+            height: 30px;       
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Loader -->
+     <div id="preloader">  
+         <div class="loader-icon"> 
+ <i class="fas fa-heartbeat fa-3x pulse"></i>   
+     </div>   
+       </div> 
+
+
+
+   
+
+
+    @* Responsive Navbar *@
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold text-primary fs-3" href="/">BookMyCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a asp-controller="Services" asp-action="Index" class="btn btn-outline-info px-4 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-stethoscope"></i> Services
+                        </a>
+                    </li>
+
+                    @if (string.IsNullOrEmpty(userId))
+                    {
+                        <!-- ✅ Not Logged In -->
+                        <li class="nav-item">
+                            <button class="btn btn-outline-primary d-flex align-items-center px-4" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary d-flex align-items-center px-4" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </li>
+                    }
+                    else
+                    {
+                         
+                    var profilePath = string.IsNullOrEmpty(ViewBag.photo)
+                    ? "Photos/defaultProfilePic.webp"
+                    : $"uploads/user/{ViewBag.photo}";
+                
+                        <!-- ✅ Logged In -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="~/@profilePath" class="profile-img" alt="Profile">
+                                @userName
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" asp-controller="User" asp-action="Home"><i class="fa-solid fa-house me-2"></i>Dashboard</a></li>
+                                <li><a class="dropdown-item" asp-controller="User" asp-action="Logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="loginModalLabel">Login As</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-grid gap-3 p-4">
+                    <a  class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 icon-hover" asp-controller="User" asp-action="Login">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        User
+                    </a>
+                    <a class="btn btn-outline-success d-flex align-items-center justify-content-center gap-2 icon-hover" asp-controller="Nurse" asp-action="Login">
+                        <i class="fa-solid fa-user-nurse fa-lg"></i>
+                        Nurse
+                    </a>
+                    <a class="btn btn-outline-danger d-flex align-items-center justify-content-center gap-2 icon-hover" asp-controller="Ambulance" asp-action="Login">
+                        <i class="fa-solid fa-truck-medical fa-lg"></i>
+                                                 Ambulance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 shadow-lg">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="registerModalLabel">Register As</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-grid gap-3 p-4">
+                    
+
+                    <a onclick="showTermsPopupUser()" class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 icon-hover">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                        User
+                    </a>
+
+
+
+
+                    <a onclick="showTermsPopupNurse()" class="btn btn-outline-success d-flex align-items-center justify-content-center gap-2 icon-hover">
+                        <i class="fa-solid fa-user-nurse fa-lg"></i>
+                        Nurse
+                    </a>
+
+
+
+                    <a asp-controller="Ambulance" asp-action="Register" class="btn btn-outline-danger d-flex align-items-center justify-content-center gap-2 icon-hover">
+                        <i class="fa-solid fa-truck-medical fa-lg"></i> Ambulance
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Footer *@
+    <footer class="bg-light text-center py-4 mt-5 border-top">
+        <div class="text-muted">&copy; 2025 BookMyCare. All rights reserved.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="~/js/PageLoader.js"></script> 
+
+   
+
+    <script>
+        function showTermsPopupUser() {
+            Swal.fire({
+                title: 'Terms & Conditions',
+                icon: 'info',
+                html: `
+                    <div style="text-align:left; max-height:300px; overflow-y:auto;">
+                        <p><strong>Welcome to BookMyCare!</strong></p>
+                        <p>Before registering, please review and accept our terms:</p>
+                                <ul>
+            <li>You must provide accurate and up-to-date personal details (name, phone number, email, etc.) during registration and bookings.</li>
+
+            <li>Your personal data will only be used for healthcare-related purposes including booking, communication with healthcare providers, and internal analytics.</li>
+
+            <li>You are responsible for maintaining the confidentiality of your account and login credentials. Any unauthorized activity must be reported immediately.</li>
+
+            <li>Healthcare professionals booked through BookMyCare are verified, but the platform is not liable for any medical outcomes. Always follow up with certified medical advice when necessary.</li>
+
+            <li>Respect and proper conduct must be maintained in all interactions with nurses or ambulance providers. Abuse, threats, or misconduct will result in account suspension or legal action.</li>
+
+            <li>You agree not to misuse the platform for emergency hoaxes, false bookings, or non-health-related purposes.</li>
+
+            <li>Your location may be used (with permission) to help identify nearby healthcare providers efficiently.</li>
+
+            <li>Feedback and reviews must be truthful and constructive. Defamatory content may be removed, and the user held accountable.</li>
+
+            <li>All payment-related data is handled securely. BookMyCare does not store sensitive card information directly.</li>
+
+            <li>You may request account deletion and data removal at any time, except when restricted by medical or legal compliance policies.</li>
+
+            <li>By registering, you acknowledge and agree to our <a href="#" class="text-success" target="_blank">Privacy Policy</a> and <a href="#" class="text-success" target="_blank">Terms of Use</a>.</li>
+        </ul>
+
+
+                        <div class="form-check mt-3">
+                            <input type="checkbox" id="agreeTerms" class="form-check-input">
+                            <label for="agreeTerms" class="form-check-label">
+                                I have read and agree to the terms and conditions.
+                            </label>
+                        </div>
+                    </div>
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Proceed to Register',
+                cancelButtonText: 'Cancel',
+                preConfirm: () => {
+                    const checkbox = Swal.getPopup().querySelector('#agreeTerms');
+                    if (!checkbox.checked) {
+                        Swal.showValidationMessage('You must agree to the terms before continuing.');
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/User/Register';
+                }
+            });
+        }
+
+
+
+             function showTermsPopupNurse() {
+            Swal.fire({
+                title: 'Terms & Conditions',
+                icon: 'info',
+                html: `
+                    <div style="text-align:left; max-height:300px; overflow-y:auto;">
+                        <p><strong>Welcome to BookMyCare!</strong></p>
+                        <p>Before registering, please review and accept our terms:</p>
+                            <ul>
+            <li>Your personal data (including identity and qualifications) will be collected solely for verification and service purposes in accordance with our privacy policy.</li>
+            <li>All submitted documents must be accurate, authentic, and verifiable. Any falsified information will lead to immediate termination of access and possible legal action.</li>
+            <li>BookMyCare may securely store and process your profile for patient matching, quality assurance, and internal analytics.</li>
+            <li>Photographs, certificates, and government IDs are required for authentication and may be visible to verified patients during booking.</li>
+            <li>You agree not to share patient data outside of the platform or misuse access to sensitive healthcare-related information.</li>
+            <li>Your location may be used (with permission) to optimize service availability within proximity.</li>
+            <li>Any abuse, misconduct, or violation of patient rights may result in account suspension or permanent removal.</li>
+            <li>You have the right to request deletion of your account and personal data at any time, subject to regulatory compliance obligations.</li>
+            <li>By registering, you accept our <a href="#" target="_blank" class="text-success">Privacy Policy</a> and <a href="#" target="_blank" class="text-success">Terms of Use</a>.</li>
+        </ul>
+
+                        <div class="form-check mt-3">
+                            <input type="checkbox" id="agreeTerms" class="form-check-input">
+                            <label for="agreeTerms" class="form-check-label">
+                                I have read and agree to the terms and conditions.
+                            </label>
+                        </div>
+                    </div>
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Proceed to Register',
+                cancelButtonText: 'Cancel',
+                preConfirm: () => {
+                    const checkbox = Swal.getPopup().querySelector('#agreeTerms');
+                    if (!checkbox.checked) {
+                        Swal.showValidationMessage('You must agree to the terms before continuing.');
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/Nurse/Register';
+                }
+            });
+        }
+
+
+
+
+           
+       
+    </script>
+
+</body>
+</html>

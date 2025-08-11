@@ -1,0 +1,64 @@
+﻿
+@{
+    TempData["Title"] = "Home";
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml";
+}
+
+
+
+<!-- Cards -->
+<div class="container py-4">
+    <div class="row dashboard-cards g-4">
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center bg-white">
+                <i class="fas fa-clipboard-list text-primary"></i>
+                <h5 class="mt-2 fw-semibold">Assigned Bookings</h5>
+                <p>Check upcoming patient appointments.</p>
+                <a asp-controller="Nurse" asp-action="Bookings" class="btn btn-outline-primary btn-sm">View</a>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center bg-white">
+                <i class="fas fa-calendar-check text-success"></i>
+                <h5 class="mt-2 fw-semibold">Mark Availability</h5>
+                <p>Set your working hours for bookings.</p>
+                <a href="#" class="btn btn-outline-success btn-sm">Update</a>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center bg-white">
+                <i class="fas fa-user-edit text-info"></i>
+                <h5 class="mt-2 fw-semibold">Edit Profile</h5>
+                <p>Update your information and password.</p>
+                <a asp-controller="Nurse" asp-action="UpdateProfile" class="btn btn-outline-info btn-sm">Edit</a>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center bg-white">
+                <i class="fas fa-history text-warning"></i>
+                <h5 class="mt-2 fw-semibold">Booking History</h5>
+                <p>See past services and ratings.</p>
+                <a asp-controller="Nurse" asp-action="BookingHistory" class="btn btn-outline-warning btn-sm">History</a>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center bg-white">
+                <i class="fas fa-headset text-danger"></i>
+                <h5 class="mt-2 fw-semibold">Support</h5>
+                <p>Need help? Get assistance now.</p>
+                <a asp-controller="Nurse" asp-action="Support" class="btn btn-outline-danger btn-sm">Help</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

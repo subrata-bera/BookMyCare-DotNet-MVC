@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Welcome to BookMyCare";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('/images/healthcare-bg.jpg') center/cover no-repeat;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+        /* Card Hover */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .service-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+            }
+
+        /* How It Works */
+        .how-works .step {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+            .how-works .step:hover {
+                transform: translateY(-5px);
+            }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+}
+
+<!-- Hero -->
+<section class="hero">
+    <div>
+        <h1>Your Health, Our Priority</h1>
+        <p>Book trained nurses and ambulances anytime, anywhere.</p>
+        <div class="mt-4">
+            <a href="/Services/Index" class="btn btn-light btn-lg me-3">Find Nurse</a>
+            <a href="/Ambulance/Index" class="btn btn-outline-light btn-lg">Book Ambulance</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">Our Services</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4">
+                <i class="fa-solid fa-user-nurse fa-3x text-primary mb-3"></i>
+                <h5>Home Nurse Care</h5>
+                <p>Professional and trained nurses at your doorstep.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4">
+                <i class="fa-solid fa-truck-medical fa-3x text-danger mb-3"></i>
+                <h5>Emergency Ambulance</h5>
+                <p>Quick response ambulances within your area.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4">
+                <i class="fa-solid fa-heart-pulse fa-3x text-success mb-3"></i>
+                <h5>Personal Care</h5>
+                <p>Compassionate care for recovery and wellness.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="bg-light py-5 how-works">
+    <div class="container">
+        <h2 class="text-center mb-5">How It Works</h2>
+        <div class="row g-4">
+            <div class="col-md-3 text-center">
+                <div class="step">
+                    <i class="fa-solid fa-magnifying-glass fa-2x text-primary mb-3"></i>
+                    <h6>Find Service</h6>
+                    <p>Search nearby nurses or ambulances.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="step">
+                    <i class="fa-solid fa-hand-pointer fa-2x text-success mb-3"></i>
+                    <h6>Book Instantly</h6>
+                    <p>Choose the best option and book instantly.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="step">
+                    <i class="fa-solid fa-credit-card fa-2x text-warning mb-3"></i>
+                    <h6>Pay Securely</h6>
+                    <p>Complete the payment online safely.</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="step">
+                    <i class="fa-solid fa-hand-holding-medical fa-2x text-danger mb-3"></i>
+                    <h6>Get Care</h6>
+                    <p>Receive timely healthcare at home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="container py-5">
+    <h2 class="text-center mb-5">What Our Clients Say</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            @for (int i = 0; i < 10; i++)
+            {
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"Excellent service, the nurse was very professional and caring."</p>
+                        <h6>- Client @(i + 1)</h6>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a2d04d66a0.js" crossorigin="anonymous"></script>
+}
+<script>
+    @if (TempData["success"] != null)
+    {
+        <text>
+                    Swal.fire({
+                        title: 'Success!',
+                        text: '@TempData["Success"]',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+        </text>
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: { delay: 2500 },
+        breakpoints: {
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 }
+        }
+    });
+</script>

@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Update Profile";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link href="~/css/UpdateProfile.css" rel="stylesheet" />
+
+<div class="edit-profile-wrapper">
+
+
+
+    <h4 class="text-center mb-4 text-primary fw-bold">
+        <i class="fas fa-user-edit me-2"></i>Edit Profile
+    </h4>
+
+    <!-- Profile Picture -->
+    <form asp-action="submitUpdate" method="post" id="updateForm" enctype="multipart/form-data">
+
+        <div class="profile-pic-container">
+            <img id="profilePreview" alt="Profile Picture" src="~/uploads/user/@Model.photograph" />
+            <label for="profilePicUpload" class="edit-icon" title="Change Picture">
+                <i class="fas fa-camera"></i>
+            </label>
+            <input type="file" id="profilePicUpload" name="ProfilePic" class="d-none" accept="image/*" onchange="previewProfilePic(this)" />
+        </div>
+
+        <!-- Form with Dummy Data -->
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" name="FullName" class="form-control" value="@Model.FullName" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" name="Email" class="form-control" value="@Model.Email" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="text" name="Phone" class="form-control" value="@Model.Phone" required />
+            </div>
+
+            @* <div class="col-md-6"> *@
+            @*     <label class="form-label">Date of Birth</label> *@
+            @*     <input type="date" name="dob" class="form-control" value="@Model.dob.ToString("yyyy-MM-dd")" required /> *@
+            @* </div> *@
+
+           
+
+
+        </div>
+    </form>
+    <div class="mt-4 text-end">
+        <button type="submit" class="btn btn-primary px-4" onclick="Click()">
+            <i class="fas fa-save me-1"></i>Update
+        </button>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function previewProfilePic(input) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('profilePreview').src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    function Click() {
+        const form = document.getElementById('updateForm');
+
+        // Get all input fields (excluding type="file")
+        const requiredInputs = form.querySelectorAll('input:not([type="file"]), textarea');
+
+        let allFilled = true;
+
+        requiredInputs.forEach(input => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+
+        if (!allFilled) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Fields',
+                text: 'Please fill in all required fields before submitting.'
+            });
+            return;
+        }
+
+        // All fields are filled — show warning confirmation
+        Swal.fire({
+            title: 'Warning',
+            text: "Are you sure you want to update your personal details?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, update',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                form.submit();
+            }
+        });
+    }
+</script>

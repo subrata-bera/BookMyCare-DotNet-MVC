@@ -1,0 +1,137 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+}
+
+.wrapper {
+    display: flex;
+}
+.main-content {
+    margin-left: 230px; /* Push content to the right of sidebar */
+    padding: 0;
+    flex: 1;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 230px;
+    background-color: #1a2238;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: all 0.3s;
+    z-index: 999;
+}
+
+
+    .sidebar .logo {
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .sidebar .nav-link {
+        color: #cfd8dc;
+        padding: 12px 20px;
+    }
+
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            background-color: #0d1b2a;
+            color: #fff;
+        }
+
+.main-content {
+    flex: 1;
+    padding: 0;
+}
+
+.topbar {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .topbar .profile-info {
+        display: flex;
+        align-items: center;
+    }
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logout-btn {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dashboard-cards .card {
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+}
+
+    .dashboard-cards .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+.dashboard-cards i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Responsive sidebar toggler */
+.sidebar-toggler {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1a2238;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -230px;
+        top: 0;
+        z-index: 999;
+    }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+    .sidebar-toggler {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .topbar .profile-info {
+            margin-top: 10px;
+            width: 100%;
+            justify-content: space-between;
+        }
+}

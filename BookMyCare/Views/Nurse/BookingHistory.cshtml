@@ -1,0 +1,69 @@
+﻿@{
+    TempData["Title"] = "Booking History";
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml";
+}
+
+<!-- Page CSS -->
+<link href="~/css/BookingHistory.css" rel="stylesheet" />
+
+<div class="container history-container">
+    <h4 class="text-primary fw-bold mb-4">
+        <i class="fas fa-history me-2"></i>Booking History
+    </h4>
+
+
+
+    @if(Model != null && Model.Count > 0)
+    {
+        foreach(var history in Model)
+        {
+            string badgeClass = "bg-secondary";
+            if (history.status == "completed")
+            {
+                badgeClass = "bg-success";
+            }
+            else if (history.status == "rejected")
+            {
+                badgeClass = "bg-danger";
+            }
+            <a>
+                <div class="history-item d-flex justify-content-between align-items-start flex-wrap">
+
+                    <div class="d-flex align-items-start">
+
+                        @if(string.IsNullOrEmpty(history.photograph))
+                        {
+                            <i class="fas fa-user-nurse history-icon"></i>
+                        }
+                        else
+                        {
+                            <img src="~/uploads/user/@history.photograph" class="img-fluid rounded-circle"
+                                 style="width: 40px; height: 40px; object-fit: cover; margin-right: 20px" />
+                        }
+
+                        <div>
+                            <div class="history-header">Patient: @history.name</div>
+                            <div class="history-meta">
+                                <div>Service: Data will added later</div>
+                                <div>Date: @history.from_date - @history.to_date</div>
+                                <div>Time: @history.from_time - @history.to_time</div>
+                                <div>Status: <span class="badge @badgeClass text-capitalize">@history.status</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </a>
+        }
+    }
+    else
+    {
+        <div class="col-12 text-center">
+            <div class="alert alert-danger">No Booking history found.</div>
+        </div>
+    }
+
+    
+
+</div>

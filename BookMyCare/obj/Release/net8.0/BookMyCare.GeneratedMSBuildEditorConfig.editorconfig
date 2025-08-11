@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BookMyCare
+build_property.RootNamespace = BookMyCare
+build_property.ProjectDir = D:\My Codes\DOT NET Core MVC\BookMyCare\BookMyCare\BookMyCare\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\My Codes\DOT NET Core MVC\BookMyCare\BookMyCare\BookMyCare
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Admin/CancelNurse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FuY2VsTnVyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Admin/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Admin/Nurses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTnVyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Admin/PendingNurse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGVuZGluZ051cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Ambulance/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1idWxhbmNlXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Ambulance/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1idWxhbmNlXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/BookingDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcQm9va2luZ0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/BookingHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcQm9va2luZ0hpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/Bookings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcQm9va2luZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/Support.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcU3VwcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Nurse/UpdateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcVXBkYXRlUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Services/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Services/Nurse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcTnVyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Services/Nurses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcTnVyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Shared/_LayoutNurse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROdXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/User/BookingHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCb29raW5nSGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/User/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/User/UpdateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Codes/DOT NET Core MVC/BookMyCare/BookMyCare/BookMyCare/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

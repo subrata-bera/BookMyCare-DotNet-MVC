@@ -1,0 +1,135 @@
+﻿@* Views/Nurse/Login.cshtml *@
+@{
+    ViewData["Title"] = "User Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-primary text-white text-center py-3 rounded-top-4">
+                    <h4 class="mb-0"><i class="fa-solid fa-user-nurse me-2"></i>User Login</h4>
+                </div>
+                <div class="card-body px-4 py-4">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="text-decoration-none text-primary">Forgot password?</a>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center bg-light rounded-bottom-4 py-3">
+                    <small class="text-muted">
+                        Don't have an account? <a onclick="showTermsPopup()" class="text-success text-decoration-none">Register here</a>
+                        </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to right, #e8f5e9, #ffffff);
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        a{
+            cursor:pointer;
+        }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+
+    @if (ViewBag.Error != null)
+    {
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '@ViewBag.Error'
+                });
+    </script>
+    }
+<script>
+    function showTermsPopup() {
+        Swal.fire({
+            title: 'Terms & Conditions',
+            icon: 'info',
+            html: `
+                <div style="text-align:left; max-height:300px; overflow-y:auto;">
+                    <p><strong>Welcome to BookMyCare!</strong></p>
+                    <p>Before registering, please review and accept our terms:</p>
+                            <ul>
+        <li>You must provide accurate and up-to-date personal details (name, phone number, email, etc.) during registration and bookings.</li>
+
+        <li>Your personal data will only be used for healthcare-related purposes including booking, communication with healthcare providers, and internal analytics.</li>
+
+        <li>You are responsible for maintaining the confidentiality of your account and login credentials. Any unauthorized activity must be reported immediately.</li>
+
+        <li>Healthcare professionals booked through BookMyCare are verified, but the platform is not liable for any medical outcomes. Always follow up with certified medical advice when necessary.</li>
+
+        <li>Respect and proper conduct must be maintained in all interactions with nurses or ambulance providers. Abuse, threats, or misconduct will result in account suspension or legal action.</li>
+
+        <li>You agree not to misuse the platform for emergency hoaxes, false bookings, or non-health-related purposes.</li>
+
+        <li>Your location may be used (with permission) to help identify nearby healthcare providers efficiently.</li>
+
+        <li>Feedback and reviews must be truthful and constructive. Defamatory content may be removed, and the user held accountable.</li>
+
+        <li>All payment-related data is handled securely. BookMyCare does not store sensitive card information directly.</li>
+
+        <li>You may request account deletion and data removal at any time, except when restricted by medical or legal compliance policies.</li>
+
+        <li>By registering, you acknowledge and agree to our <a href="#" class="text-success" target="_blank">Privacy Policy</a> and <a href="#" class="text-success" target="_blank">Terms of Use</a>.</li>
+    </ul>
+
+
+                    <div class="form-check mt-3">
+                        <input type="checkbox" id="agreeTerms" class="form-check-input">
+                        <label for="agreeTerms" class="form-check-label">
+                            I have read and agree to the terms and conditions.
+                        </label>
+                    </div>
+                </div>
+            `,
+            showCancelButton: true,
+            confirmButtonText: 'Proceed to Register',
+            cancelButtonText: 'Cancel',
+            preConfirm: () => {
+                const checkbox = Swal.getPopup().querySelector('#agreeTerms');
+                if (!checkbox.checked) {
+                    Swal.showValidationMessage('You must agree to the terms before continuing.');
+                }
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '/User/Register';
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Available Nurses";
+}
+
+<section class="nurses-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Available Nurses</h2>
+            <p class="text-muted">Search and book qualified nurses based on your needs.</p>
+        </div>
+
+        <!-- Search Filter -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <input type="text" class="form-control form-control-lg shadow-sm" id="nurseSearch" placeholder="Search by name, specialty or location">
+            </div>
+        </div>
+
+        <div class="row" id="nurseList">
+            <!-- Sample Nurse Card -->
+
+            @foreach (var nurse in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4 nurse-card">
+                    <div class="card shadow-sm rounded-4 border-0 h-100">
+                        <img src="@(string.IsNullOrEmpty(nurse.photograph) ? "/photos/defaultProfilePic.jpg" : "/uploads/nurse/" + nurse.photograph)" class="card-img-top rounded-top-4" alt="Nurse">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">@nurse.name</h5>
+                            <p class="text-muted mb-1">Specialty: @nurse.specialization</p>
+                            <p class="text-muted">Location: @nurse.address</p>
+                            <a asp-controller="Services" asp-action="Nurse" asp-route-id="@nurse.id" class="btn btn-primary btn-sm mt-2 btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            }
+
+
+
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.getElementById('nurseSearch').addEventListener('input', function () {
+            const value = this.value.toLowerCase();
+            document.querySelectorAll('.nurse-card').forEach(card => {
+                const text = card.innerText.toLowerCase();
+                card.style.display = text.includes(value) ? 'block' : 'none';
+            });
+        });
+    </script>
+
+    
+
+}
+
+@section Styles {
+    <style>
+        .nurses-section {
+            background: linear-gradient(to right, #e8f0ff, #ffffff);
+        }
+
+        .card-img-top {
+            height: 240px;
+            object-fit: cover;
+        }
+
+        #nurseSearch {
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        .card-body h5 {
+            font-size: 1.25rem;
+        }
+
+        .btn-book {
+            border-radius: 20px;
+        }
+    </style>
+}

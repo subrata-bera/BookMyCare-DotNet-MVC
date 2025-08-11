@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Ambulance Registration";
+}
+
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .register-card {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            border-radius: 12px;
+        }
+
+        .form-label i {
+            margin-right: 8px;
+            color: #198754;
+        }
+
+        .btn-success {
+            border-radius: 25px;
+            padding: 10px 25px;
+            width: 100%;
+        }
+    </style>
+}
+
+<div class="container py-5">
+    <div class="register-card">
+        <h3 class="text-center mb-4 text-success">Ambulance Registration</h3>
+        <form method="post" enctype="multipart/form-data">
+            <!-- Owner Information -->
+            <h5 class="text-secondary">Owner Information</h5>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-user"></i> Owner Name</label>
+                <input type="text" class="form-control" name="OwnerName" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" class="form-control" name="OwnerEmail" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-phone"></i> Phone Number</label>
+                <input type="tel" class="form-control" name="OwnerPhone" pattern="[0-9]{10}" required />
+            </div>
+
+            <!-- Ambulance Information -->
+            <h5 class="text-secondary mt-4">Ambulance Details</h5>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-ambulance"></i> Vehicle Number</label>
+                <input type="text" class="form-control" name="VehicleNumber" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-map-marker-alt"></i> Operating Area (City/Locality)</label>
+                <input type="text" class="form-control" name="OperatingArea" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-car-side"></i> Ambulance Type</label>
+                <select class="form-control" name="AmbulanceType" required>
+                    <option value="">Select Type</option>
+                    <option value="Basic Life Support (BLS)">Basic Life Support (BLS)</option>
+                    <option value="Advanced Life Support (ALS)">Advanced Life Support (ALS)</option>
+                    <option value="Patient Transport Vehicle">Patient Transport Vehicle</option>
+                </select>
+            </div>
+
+            <!-- Document Uploads -->
+            <h5 class="text-secondary mt-4">Upload Documents</h5>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-id-card"></i> Registration Certificate (RC)</label>
+                <input type="file" class="form-control" name="RCFile" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-shield-alt"></i> Insurance Document</label>
+                <input type="file" class="form-control" name="InsuranceFile" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-id-badge"></i> Driver License</label>
+                <input type="file" class="form-control" name="DriverLicenseFile" required />
+            </div>
+
+            <button type="submit" class="btn btn-success mt-3">Submit Registration</button>
+        </form>
+        <p class="text-center mt-3">Already registered? <a href="#">Login</a></p>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+}

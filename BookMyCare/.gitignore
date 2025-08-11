@@ -1,0 +1,11 @@
+appsettings.json
+appsettings.Development.json
+wwwroot/uploads/nurse
+wwwroot/uploads/user
+wwwroot/uploads/bookings
+wwwroot/uploads/ambulance
+wwwroot/uploads/nurse/.gitkeep
+wwwroot/uploads/user/.gitkeep
+wwwroot/uploads/bookings/.gitkeep
+wwwroot/uploads/ambulance/.gitkeep
+Properties/PublishProfiles/

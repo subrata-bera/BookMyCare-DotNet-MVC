@@ -1,0 +1,288 @@
+﻿@{
+    ViewData["Title"] = "Book Nurse";
+}
+
+
+<style>
+    body {
+        background-color: #f5f9ff;
+    }
+
+    h2.text-primary {
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    label.form-label {
+        font-weight: 500;
+        color: #333;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+        input.form-control:focus,
+        textarea.form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+        }
+
+    button.btn-success {
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    button.btn-outline-primary {
+        padding: 8px 18px;
+        font-weight: 500;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+
+    /* Calendar Styling */
+    .fc {
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 15px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+    }
+
+        .fc .fc-col-header-cell-cushion {
+            font-weight: bold;
+            color: #1d3557;
+            padding: 10px;
+        }
+
+        .fc .fc-daygrid-day {
+            border: 1px solid #dee2e6;
+            transition: background 0.3s ease;
+        }
+
+            .fc .fc-daygrid-day:hover {
+                background-color: #e3f2fd;
+                cursor: pointer;
+            }
+
+    .fc-day-sun {
+        background-color: #fff8f0 !important;
+    }
+
+    .fc .fc-day-today {
+        background-color: #cfe2ff !important;
+        font-weight: bold;
+        border: 2px solid #0d6efd;
+    }
+
+    .fc-daygrid-day-number {
+        font-weight: 500;
+        font-size: 14px;
+        padding: 4px;
+        display: inline-block;
+    }
+
+    .fc-daygrid-day-frame {
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .modal-content {
+        border-radius: 10px;
+    }
+
+    .badge.bg-danger {
+        background-color: #dc3545 !important;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .badge.bg-success {
+        background-color: #198754 !important;
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    /* File input style */
+    input[type="file"].form-control {
+        padding: 6px 10px;
+    }
+</style>
+
+  
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/daygrid/main.min.css" rel="stylesheet" />
+
+
+<div class="container my-5">
+    <h2 class="text-primary mb-4">Book Nurse</h2>
+
+    <form method="post" asp-route-id="@ViewBag.nurseId" enctype="multipart/form-data">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">From Date</label>
+                <input type="date" class="form-control" name="from_date" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">To Date</label>
+                <input type="date" class="form-control" name="to_date" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Start Time</label>
+                <input type="time" class="form-control" name="from_time" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">End Time</label>
+                <input type="time" class="form-control" name="to_time" required />
+            </div>
+        </div>
+
+        <h5 class="mt-4 mb-3">Address for Home Visit</h5>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label class="form-label">House / Flat No.</label>
+                <input type="text" name="house_no" class="form-control" placeholder="E.g. 123-A" required />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Street Address</label>
+                <input type="text" name="street" class="form-control" placeholder="E.g. MG Road" required />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Landmark</label>
+                <input type="text" name="landmark" class="form-control" placeholder="E.g. Near Park" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">City</label>
+                <input type="text" name="city" class="form-control" required />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">State</label>
+                <input type="text" name="state" class="form-control" required />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Pincode</label>
+                <input type="text" name="pincode" class="form-control" pattern="\d{6}" maxlength="6" title="6-digit pincode" required />
+            </div>
+        </div>
+
+        <div class="mb-3 col-md-3">
+            <label class="form-label">Upload Any Government ID</label>
+            <input type="file" name="document" class="form-control" accept=".pdf,.jpg,.jpeg" required />
+        </div>
+
+
+        <div class="d-flex justify-content-end gap-3">
+            <button type="button" class="btn btn-outline-primary" onclick="openAvailabilityPopup()">
+                <i class="bi bi-calendar-week"></i> Check Availability
+            </button>
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-credit-card"></i> Pay and Book
+            </button>
+        </div>
+        </form>
+    <!-- Calendar Modal -->
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calendarModalLabel">Nurse Availability</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span class="badge bg-danger">Booked</span>
+                        <span class="badge bg-success">Available</span>
+                    </div>
+                    <div id="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+    @if (ViewBag.success != null)
+    {
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Booked Successfully.',
+                    text: '@ViewBag.success',
+                       confirmButtonText: 'OK',
+                    confirmButtonColor: '#3085d6'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+        window.location.href = '@Url.Action("Nurse", "Services", new { id = ViewBag.nurseId })';
+            }
+                });
+    </script>
+    }
+    @if (ViewBag.Error != null)
+    {
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: '@ViewBag.Error'
+        });
+    </script>
+    }
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+@* <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script> *@
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/daygrid/main.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+
+
+@section Scripts {
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            window.openAvailabilityPopup = function () {
+                const modalEl = document.getElementById('availabilityModal');
+                const modal = new bootstrap.Modal(modalEl);
+
+                modal.show();
+
+                modalEl.addEventListener('shown.bs.modal', function () {
+                    const calendarEl = document.getElementById('calendar');
+                    calendarEl.innerHTML = ''; // Clear previous calendar
+
+                          const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            height: 500
+        });
+
+                    calendar.render();
+                }, { once: true });
+            };
+        });
+    </script>
+
+}
+
+
+                @* -------------------------- *@

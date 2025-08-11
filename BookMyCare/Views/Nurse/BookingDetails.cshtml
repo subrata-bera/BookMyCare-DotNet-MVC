@@ -1,0 +1,160 @@
+﻿@{
+    TempData["Title"] = "Booking Details";
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml";
+
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+<div class="container my-5">
+    <div class="card shadow-lg rounded-4">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="bi bi-file-medical"></i> Booking Details</h4>
+        </div>
+
+        <div class="card-body p-4">
+            <div class="row g-4">
+                <!-- Patient Photo & Basic Info -->
+                <div class="col-lg-4 text-center">
+                    @if(string.IsNullOrEmpty(Model.photograph))
+                    {
+                        <img src="~/Photos/defaultProfilePic.jpg"
+                        alt="Patient Photo"
+                        class="rounded-circle border border-3 mb-3"
+                        style="width: 130px; height: 130px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                        <img src="~/uploads/user/@Model.photograph"
+                             alt="Patient Photo"
+                             class="rounded-circle border border-3 mb-3"
+                             style="width: 130px; height: 130px; object-fit: cover;" />
+                    }
+
+
+
+                    
+                    <h5 class="fw-semibold mb-1">@Model.name</h5>
+                    <p class="text-muted mb-0">Age: 32 | Male</p>
+                </div>
+
+                <!-- Booking Info -->
+                <div class="col-lg-4">
+                    <h5 class="text-secondary border-bottom pb-2 mb-3"><i class="bi bi-calendar-event"></i> Booking Info</h5>
+                    <p><strong>From Date:</strong> @Model.start_date</p>
+                    <p><strong>To Date:</strong> @Model.end_date</p>
+                    <p><strong>Start Time:</strong> @Model.start_time</p>
+                    <p><strong>End Time:</strong> @Model.end_time</p>
+                </div>
+
+                <!-- Address Info -->
+                <div class="col-lg-4">
+                    <h5 class="text-secondary border-bottom pb-2 mb-3"><i class="bi bi-geo-alt"></i> Address Info</h5>
+                    <p><strong>House No.:</strong> @Model.house_no</p>
+                    <p><strong>Street:</strong> @Model.street</p>
+                    <p><strong>Landmark:</strong> @Model.landmark</p>
+                    <p><strong>City:</strong> @Model.city</p>
+                    <p><strong>State:</strong> @Model.state</p>
+                    <p><strong>Pincode:</strong> @Model.pincode</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer p-4">
+            <div class="row">
+                <div class="col-12 col-lg-auto ms-lg-auto d-flex flex-column flex-md-row gap-3">
+                    <button onclick="viewFile('@Url.Content("~/uploads/bookings/" + Model.documents)')"
+                       class="btn btn-outline-secondary w-100 w-md-auto"
+                       
+                       style="min-width: 180px;">
+                        <i class="bi bi-file-earmark-text"></i> View Document
+                    </button>
+                    <!-- Debug line (remove later) -->
+                    <form method="post" id="completeBookingForm" asp-action="completeBooking" asp-route-id="@ViewBag.id"></form>
+                    <form method="post" id="rejectBooking" asp-action="RejectBooking" asp-route-id="@ViewBag.id"></form>
+
+                    <button class="btn btn-success w-100 w-md-auto" style="min-width: 180px;" onclick="confirmCompletionOtp()">
+                        <i class="bi bi-check2-circle"></i> Mark Completed
+                    </button>
+
+                    <button class="btn btn-danger w-100 w-md-auto" style="min-width: 180px;" onclick="bookingReject()">
+                        <i class="bi bi-x-circle"></i> Reject
+                    </button>
+
+                    <button onclick="history.back()" class="btn btn-primary w-100 w-md-auto" style="min-width: 180px;">
+                        <i class="bi bi-arrow-left"></i> OK
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+     function viewFile(fileUrl) {
+         const extension = fileUrl.split('.').pop().toLowerCase();
+         let contentHtml = '';
+
+         if (['jpg', 'jpeg', 'png', 'gif', 'bmp'].includes(extension)) {
+             // Show image with proper styling
+             contentHtml = `<img src="${fileUrl}" alt="Image" style="max-width: 100%; max-height: 500px; display: block; margin: 0 auto;" />`;
+         } else {
+             // Show PDF or other docs in iframe
+             contentHtml = `<iframe src="${fileUrl}" width="100%" height="500px" style="border:none;"></iframe>`;
+         }
+
+         Swal.fire({
+             title: 'Document Preview',
+             html: contentHtml,
+             width: 1000,
+             showCloseButton: true,
+             showConfirmButton: false
+         });
+     }
+
+
+    function confirmCompletionOtp() {
+         Swal.fire({
+             title: 'Enter OTP to Confirm Completion',
+             html: `
+                 <div class="mb-2">Testing mode OTP: <strong>1234</strong></div>
+                 <input type="text" id="otp-code" class="swal2-input" placeholder="Enter OTP" maxlength="4" />
+             `,
+             icon: 'info',
+             showCancelButton: true,
+             confirmButtonText: 'Proceed',
+             preConfirm: () => {
+                 const otp = document.getElementById('otp-code').value;
+                 if (otp !== '1234') {
+                     Swal.showValidationMessage('Invalid OTP. Please enter 1234.');
+                     return false;
+                 }
+             }
+         }).then((result) => {
+             if (result.isConfirmed) {
+                 document.getElementById('completeBookingForm').submit();
+             }
+         });
+     }
+
+     function bookingReject()
+     {
+    Swal.fire({
+                title: 'Reject Booking',
+               text: "Are you sure you want to reject this booking?",
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, reject'
+              
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById('rejectBooking').submit();
+                }
+            });     }
+    
+</script>
+
+

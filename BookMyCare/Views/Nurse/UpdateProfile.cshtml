@@ -1,0 +1,152 @@
+﻿
+@{
+    TempData["Title"] = "Update Profile";
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+<link href="~/css/UpdateProfile.css" rel="stylesheet" />
+<div class="alert alert-warning d-flex align-items-center" role="alert">
+    <div>
+        <strong>Note:</strong> After updating your profile, your account will be temporarily deactivated until reapproved by the admin. You will not be able to log in or access your dashboard during this period.
+    </div>
+</div>
+<div class="edit-profile-wrapper">
+
+   
+
+    <h4 class="text-center mb-4 text-primary fw-bold">
+        <i class="fas fa-user-edit me-2"></i>Edit Profile
+    </h4>
+
+    <!-- Profile Picture -->
+    <form asp-action="submitUpdate" method="post" id="updateForm" enctype="multipart/form-data" asp-route-id="@ViewBag.nurseId">
+
+    <div class="profile-pic-container">
+        <img id="profilePreview" alt="Profile Picture" src="~/uploads/nurse/@Model.photograph" />
+        <label for="profilePicUpload" class="edit-icon" title="Change Picture">
+            <i class="fas fa-camera"></i>
+        </label>
+        <input type="file" id="profilePicUpload" name="photograph" class="d-none" accept="image/*" onchange="previewProfilePic(this)" />
+    </div>
+
+    <!-- Form with Dummy Data -->
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" name="fullname" class="form-control" value="@Model.name" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" value="@Model.email" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="text" name="phone" class="form-control" value="@Model.phone" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" name="dob" class="form-control" value="@Model.dob.ToString("yyyy-MM-dd")" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Qualification</label>
+                <input type="text" name="qualification" class="form-control" value="@Model.qualification" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Experience(Year)</label>
+                <input type="number" name="experience" class="form-control" value="@Model.experience" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">License Number</label>
+                <input type="text" name="license" class="form-control" value="@Model.license_number" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Specialization</label>
+                <input type="text" name="specialization" class="form-control" value="@Model.specialization" required />
+            </div>
+
+            <div class="col-md-12">
+                <label class="form-label">Address</label>
+                <textarea class="form-control" name="address" rows="3">@Model.address</textarea>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Photo ID</label>
+                <input type="file" name="photoid" class="form-control" value="3" required />
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Licence</label>
+                <input type="file" class="form-control" name="licensephoto" value="3" required />
+            </div>
+
+            
+        </div>
+    </form>
+        <div class="mt-4 text-end">
+            <button type="submit" class="btn btn-primary px-4" onclick="Click()">
+                <i class="fas fa-save me-1"></i>Update
+            </button>
+        </div>
+  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function previewProfilePic(input) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('profilePreview').src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    function Click() {
+        const form = document.getElementById('updateForm');
+
+        // Get all input fields (excluding type="file")
+        const requiredInputs = form.querySelectorAll('input:not([type="file"]), textarea');
+
+        let allFilled = true;
+
+        requiredInputs.forEach(input => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+
+        if (!allFilled) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing Fields',
+                text: 'Please fill in all required fields before submitting.'
+            });
+            return;
+        }
+
+        // All fields are filled — show warning confirmation
+        Swal.fire({
+            title: 'Warning',
+            text: "After updating your profile, your account will be deactivated until admin reapproval. You won’t be able to log in or access your dashboard during this time.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, update',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                form.submit();
+            }
+        });
+    }
+</script>

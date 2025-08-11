@@ -1,0 +1,152 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Manage Nurses - Admin";
+}
+
+
+@* @model List<BookMyCare.Models.PendingNurses> *@
+@* @model BookMyCare.Models.NurseTabViewModel *@
+
+
+<div class="container py-4">
+    <h2 class="text-center mb-4 fw-bold">Manage Nurse Applications</h2>
+
+    <!-- Sticky Navigation Tabs -->
+
+
+
+
+    <ul class="sticky-top bg-white py-2 shadow-sm z-1 nav nav-pills justify-content-center gap-3 nav-status-tabs" id="nurseTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active btn btn-outline-primary" id="pending-tab" data-bs-toggle="pill" data-bs-target="#pending" type="button" role="tab" aria-controls="pending" aria-selected="true">⏳ Pending</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn btn-outline-success" id="approved-tab" data-bs-toggle="pill" data-bs-target="#approved" type="button" role="tab" aria-controls="approved" aria-selected="false">✅ Approved</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link btn btn-outline-danger" id="rejected-tab" data-bs-toggle="pill" data-bs-target="#rejected" type="button" role="tab" aria-controls="rejected" aria-selected="false">❌ Rejected</button>
+        </li>
+    </ul>
+
+
+    <!-- Tab Content -->
+    <div class="tab-content pt-4" id="nurseTabContent">
+        <!-- Pending Nurses -->
+        <div class="tab-pane fade show active" id="pending" role="tabpanel">
+            <div class="row g-3">
+                
+                @if (Model.PendingNurses != null && Model.PendingNurses.Count > 0)
+                {
+                    @foreach (var nurse in Model.PendingNurses)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card nurse-card shadow-sm hover-shadow">
+                                <img src="~/uploads/nurse/@nurse.photograph" class="card-img-top img-fluid" alt="Nurse">
+                                <div class="card-body p-2 text-center">
+                                    <h6 class="card-title mb-1">@nurse.name</h6>
+                                    <p class="card-text small text-muted">📍 @nurse.address</p>
+                                    <a asp-controller="Admin" asp-action="PendingNurse" asp-route-id="@nurse.id" class="btn btn-sm btn-outline-primary w-100"><i class="fas fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12 text-center">
+                        <div class="alert alert-success">No Pending nurses found.</div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+
+        <!-- Approved Nurses -->
+        <div class="tab-pane fade" id="approved" role="tabpanel">
+            <div class="row g-3">
+                @if (Model.ApprovedNurses != null && Model.ApprovedNurses.Count > 0)
+                {
+                    @foreach(var nurse in Model.ApprovedNurses)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card nurse-card border-success shadow-sm hover-shadow">
+                                <img src="~/uploads/nurse/@nurse.photograph" class="card-img-top img-fluid" alt="Nurse">
+                                <div class="card-body p-2 text-center">
+                                    <h6 class="card-title text-success mb-1">@nurse.name</h6>
+                                    <p class="card-text small text-muted">📍 @nurse.address</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary w-100"><i class="fas fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12 text-center">
+                        <div class="alert alert-success">No approved nurses found.</div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Rejected Nurses -->
+        <div class="tab-pane fade" id="rejected" role="tabpanel">
+            <div class="row g-3">
+                @if(Model.RejectedNurses != null && Model.RejectedNurses.Count > 0)
+                {
+                    @foreach(var nurse in Model.RejectedNurses)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card nurse-card border-danger shadow-sm hover-shadow">
+                                <img src="~/uploads/nurse/@nurse.photograph" class="card-img-top img-fluid" alt="Nurse">
+                                <div class="card-body p-2 text-center">
+                                    <h6 class="card-title text-danger mb-1">@nurse.name</h6>
+                                    <p class="card-text small text-muted">📍 @nurse.address</p>
+                                    <a href="#" class="btn btn-sm btn-outline-primary w-100"><i class="fas fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12 text-center">
+                        <div class="alert alert-success">No Rejected nurses found.</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Add animations -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+<style>
+    .nurse-card {
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-shadow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .nav-status-tabs .btn {
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 6px 18px;
+        transition: 0.3s;
+    }
+
+        .nav-status-tabs .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-status-tabs .btn.active {
+            color: #fff !important;
+            background-color: #0d6efd !important;
+            border-color: #0d6efd !important;
+        }
+</style>

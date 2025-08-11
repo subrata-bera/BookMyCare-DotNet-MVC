@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewData["Title"] = "Pending Nuurse";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container py-5 animate__animated animate__fadeIn">
+    <div class="row">
+        <!-- Profile Photo and Basic Info -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm rounded-4">
+                <img src="~/uploads/nurse/@Model.photograph" class="card-img-top rounded-top-4" alt="Profile Photo" style="height: 300px; object-fit: cover;" />
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">@Model.name</h4>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i>@Model.email</p>
+                    <p class="text-muted"><i class="fas fa-phone me-2"></i>@Model.mobile</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Details -->
+        <div class="col-md-8">
+            <div class="card shadow-sm rounded-4 p-4">
+                <h5 class="fw-bold mb-3 text-primary">Nurse Information</h5>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Address:</label>
+                        <div class="text-muted">@Model.address</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Speciality:</label>
+                        <div class="text-muted">@Model.specialization</div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Qualification:</label>
+                        <div class="text-muted">@Model.qualification</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Experience:</label>
+                        <div class="text-muted">@Model.experience</div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">License Number:</label>
+                        <div class="text-muted">@Model.license_number</div>
+                    </div>
+                </div>
+
+                <!-- Certificate & ID Buttons -->
+                <div class="d-flex gap-3 mb-4">
+                    <a onclick="viewFile('@Url.Content("~/uploads/nurse/" + Model.license_photo)')" target="_blank" class="btn btn-outline-primary shadow-sm">
+                        <i class="fas fa-id-card me-1"></i> View Certificate
+                    </a>
+                    <a onclick="viewFile('@Url.Content("~/uploads/nurse/" + Model.photo_id)')" class="btn btn-outline-secondary shadow-sm">
+                        <i class="fas fa-address-card me-1"></i> View Photo ID
+                    </a>
+                </div>
+
+                <!-- Approve & Reject Buttons -->
+                <div class="d-flex gap-3 mt-4">
+                    <!-- Hidden form for Approve -->
+                    <form id="approveForm" method="post" asp-action="ApproveNurse" asp-controller="Admin" asp-route-id="@ViewBag.NurseId"> </form>
+
+                        <button type="button" class="btn btn-success w-100 shadow-sm" onclick="confirmApproval()">
+                            <i class="fas fa-check-circle me-1"></i> Approve
+                        </button>
+
+                    
+                
+                    <a class="btn btn-danger w-100 shadow-sm" asp-controller="Admin" asp-action="CancelNurse" asp-route-id="@ViewBag.NurseId" ><i class="fas fa-times-circle me-1"></i> Reject</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Animate.css for animations -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+<script>
+    function viewFile(fileUrl) {
+
+           
+               Swal.fire({
+                   title: 'Document Preview',
+                   html: `<iframe src="${fileUrl}" width="100%" height="500px" style="border:none;"></iframe>`,
+                   width: 1000,
+                   showCloseButton: true,
+                   showConfirmButton: false
+               });
+          
+             
+           
+       }
+       function confirmApproval(){
+           Swal.fire({
+               title: "Approve nurse ?",
+               text: "Are you sure you want to approve this nurse?",
+               icon: 'question',
+               showCancelButton: true,
+               confirmButtonColor: '#28a745',
+               cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, approve'
+           }).then((result) => {
+               if(result.isConfirmed){
+                   document.getElementById('approveForm').submit();
+               }
+           })
+       }
+      
+
+
+</script>
